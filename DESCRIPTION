@@ -1,8 +1,8 @@
 Package: speakr
 Type: Package
 Title: A Wrapper for the Phonetic Software 'Praat'
-Version: 3.1.0
-Date: 2021-04-19
+Version: 3.1.1
+Date: 2021-04-21
 Authors@R: person("Stefano", "Coretta", email = "stefano.coretta@gmail.com",
                   role = c("aut", "cre"))
 Description: It allows running 'Praat' scripts from R and it provides some
@@ -14,13 +14,13 @@ URL: https://github.com/stefanocoretta/speakr
 BugReports: https://github.com/stefanocoretta/speakr/issues
 Encoding: UTF-8
 RoxygenNote: 7.1.1
-Imports: tidyverse, lifecycle, readr, stringr
+Imports: ggplot2, lifecycle, readr, stringr, tibble
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 Language: en_GB
 NeedsCompilation: no
-Packaged: 2021-04-19 20:29:09 UTC; ste
+Packaged: 2021-04-21 08:19:53 UTC; ste
 Author: Stefano Coretta [aut, cre]
 Maintainer: Stefano Coretta <stefano.coretta@gmail.com>
 Repository: CRAN
-Date/Publication: 2021-04-19 20:50:02 UTC
+Date/Publication: 2021-04-21 09:30:06 UTC

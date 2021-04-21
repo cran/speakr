@@ -4,8 +4,6 @@ knitr::opts_chunk$set(
   comment = "#>",
   eval = FALSE
 )
-library(tidyverse)
-theme_set(theme_dark())
 library(speakr)
 
 ## ----speakr, eval=FALSE-------------------------------------------------------
