@@ -46,13 +46,13 @@ cat(formants)
 #  library(tidyverse)
 #  # Output to R tibble
 #  formants <- praat_run(script, capture = TRUE) %>%
-#    read_csv()
+#    read_csv(I(.))
 #  class(formants)
 #  glimpse(formants)
 
 ## ----echo=FALSE---------------------------------------------------------------
 # Need this because code is not run in the vignette, since it relies on external software (Praat).
-f_tbl <- read_csv(formants)
+f_tbl <- read_csv(I(formants))
 class(f_tbl)
 glimpse(f_tbl)
 
@@ -63,7 +63,7 @@ glimpse(f_tbl)
 #  window = 0.02
 #  
 #  f_bark <- praat_run(script, unit, window, capture = TRUE) %>%
-#    read_csv()
+#    read_csv(I(.))
 #  attr(f_bark, "args") <- list(unit = unit, window = window)
 
 ## ----echo=FALSE---------------------------------------------------------------

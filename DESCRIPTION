@@ -1,10 +1,11 @@
 Package: speakr
 Type: Package
 Title: A Wrapper for the Phonetic Software 'Praat'
-Version: 3.1.1
-Date: 2021-04-21
+Version: 3.2.0
+Date: 2021-07-21
 Authors@R: person("Stefano", "Coretta", email = "stefano.coretta@gmail.com",
-                  role = c("aut", "cre"))
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0001-9627-5532", github = "stefanocoretta"))
 Description: It allows running 'Praat' scripts from R and it provides some
     wrappers for basic plotting. It also adds support for literate markdown
     tangling. The package is designed to bring reproducible phonetic research
@@ -19,8 +20,9 @@ Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 Language: en_GB
 NeedsCompilation: no
-Packaged: 2021-04-21 08:19:53 UTC; ste
-Author: Stefano Coretta [aut, cre]
+Packaged: 2021-07-22 05:35:26 UTC; ste
+Author: Stefano Coretta [aut, cre] (<https://orcid.org/0000-0001-9627-5532>,
+    stefanocoretta)
 Maintainer: Stefano Coretta <stefano.coretta@gmail.com>
 Repository: CRAN
-Date/Publication: 2021-04-21 09:30:06 UTC
+Date/Publication: 2021-07-22 05:50:02 UTC
