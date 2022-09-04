@@ -1,4 +1,15 @@
-# speakr 3.2.0
+# speaker v3.2.1
+
+## Fixed
+
+* `option()` to `options()` in README (7fb7757). Thanks to @agricolamz (#11).
+
+## Developer
+
+* Fixed CRAN errors related to HTML5 checks.
+
+
+# speakr v3.2.0
 
 ## Added
 
@@ -10,7 +21,7 @@
 
 
 
-# speakr 3.1.1
+# speakr v3.1.1
 
 ## Fixed
 
@@ -19,7 +30,7 @@
 
 
 
-# speakr 3.1.0
+# speakr v3.1.0
 
 ## Added
 
@@ -39,7 +50,7 @@
 
 
 
-# speakr 3.0.0
+# speakr v3.0.0
 
 ## Added
 
@@ -58,7 +69,7 @@
 * 🔥 Utilities for `lmt` have been removed. (R-based literate Praat capabilities will be reintroduced in a future release).
 
 
-# speakr 2.1.1
+# speakr v2.1.1
 
 ## Added
 
@@ -70,19 +81,19 @@
 
 * warning message about `lmt` path at install time when `lmt` is not installed
 
-# speakr 2.1.0
+# speakr v2.1.0
 
 ## Changed
 
 * expanded documentation
 
-# speakr 2.0.2
+# speakr v2.0.2
 
 ## Fixed
 
 * missing date in citation
 
-# speakr 2.0.1
+# speakr v2.0.1
 
 ## Added
 
@@ -92,7 +103,7 @@
 
 * clarified scope and installation of the package in README.md
 
-# speakr 2.0.0
+# speakr v2.0.0
 
 ## Added
 
@@ -116,7 +127,7 @@
 
 * old functions with camelCase names
 
-# speakr 1.0.0
+# speakr v1.0.0
 
 ## Added
 
