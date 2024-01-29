@@ -43,15 +43,15 @@ cat(formants)
 cat(formants)
 
 ## ----run-capt-tbl, eval=FALSE-------------------------------------------------
-#  library(tidyverse)
 #  # Output to R tibble
-#  formants <- praat_run(script, capture = TRUE) %>%
-#    read_csv(I(.))
+#  formants <- praat_run(script, capture = TRUE) |>
+#    read_csv()
 #  class(formants)
 #  glimpse(formants)
 
 ## ----echo=FALSE---------------------------------------------------------------
 # Need this because code is not run in the vignette, since it relies on external software (Praat).
+# Wrapping with I() is needed because `formants` is a raw vector. See `file` argument in `?read_csv`.
 f_tbl <- read_csv(I(formants))
 class(f_tbl)
 glimpse(f_tbl)
@@ -62,8 +62,8 @@ glimpse(f_tbl)
 #  unit = "Bark"
 #  window = 0.02
 #  
-#  f_bark <- praat_run(script, unit, window, capture = TRUE) %>%
-#    read_csv(I(.))
+#  f_bark <- praat_run(script, unit, window, capture = TRUE) |>
+#    read_csv()
 #  attr(f_bark, "args") <- list(unit = unit, window = window)
 
 ## ----echo=FALSE---------------------------------------------------------------
@@ -74,7 +74,7 @@ f_bark <- read_csv(system.file("extdata", "formants-bark.csv", package = "speakr
 f_bark
 
 ## ----f-bark-plot--------------------------------------------------------------
-f_bark %>%
+f_bark |>
   ggplot(aes(F2, F1, label = vowel)) +
   geom_label(size = 10) +
   labs(

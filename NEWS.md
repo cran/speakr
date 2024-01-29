@@ -1,4 +1,17 @@
-# speaker v3.2.1
+# speakr v3.2.2
+
+## Added
+
+- `add_lmt()` to add the Quarto extension Literate Markdown Tangler.
+
+- Add `praat-lmt` vignette that illustrates how to use the LMT to write Praat scripts.
+
+## Changed
+
+- Vignettes now use native pipe `|>`.
+
+
+# speakr v3.2.1
 
 ## Fixed
 

@@ -49,7 +49,7 @@ overflow: visible;
 </style>
 <style type="text/css" data-origin="pandoc">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -344,15 +344,15 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 and spectrogram of a sound file, and add annotation from a TextGrid
 file.</p>
 <p>Start by loading the package if you haven’t already.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(speakr)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(speakr)</span></code></pre></div>
 <div id="basic-plot" class="section level2">
 <h2>Basic plot</h2>
 <p>The minimal plot includes a waveform and a spectrogram of a sound
 file.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The sound file.</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>wav <span class="ot">&lt;-</span> <span class="fu">system.file</span>(<span class="st">&quot;extdata&quot;</span>, <span class="st">&quot;vowels.wav&quot;</span>, <span class="at">package =</span> <span class="st">&quot;speakr&quot;</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">praat_plot</span>(<span class="st">&quot;vowels.png&quot;</span>, wav, <span class="at">end =</span> <span class="dv">3</span>, <span class="at">tg =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="co"># The sound file.</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>wav <span class="ot">&lt;-</span> <span class="fu">system.file</span>(<span class="st">&quot;extdata&quot;</span>, <span class="st">&quot;vowels.wav&quot;</span>, <span class="at">package =</span> <span class="st">&quot;speakr&quot;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="fu">praat_plot</span>(<span class="st">&quot;vowels.png&quot;</span>, wav, <span class="at">end =</span> <span class="dv">3</span>, <span class="at">tg =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 </div>
 <div id="plot-with-textgrid" class="section level2">
 <h2>Plot with TextGrid</h2>
@@ -361,12 +361,12 @@ path to the TextGrid with the <code>tg</code> argument. If
 <code>tg</code> is set to <code>NULL</code> (the default) the function
 will search for a TextGrid file with the same base name as the wav file,
 and if it finds one it will add it to the plot.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">praat_plot</span>(<span class="st">&quot;vowels-tg.png&quot;</span>, wav, <span class="at">end =</span> <span class="dv">3</span>, <span class="at">tg =</span> <span class="cn">NULL</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">praat_plot</span>(<span class="st">&quot;vowels-tg.png&quot;</span>, wav, <span class="at">end =</span> <span class="dv">3</span>, <span class="at">tg =</span> <span class="cn">NULL</span>)</span></code></pre></div>
 </div>
 <div id="f0-track" class="section level2">
 <h2>f0 track</h2>
 <p>You can add a track of f0 by setting <code>f0 = TRUE</code>.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">praat_plot</span>(<span class="st">&quot;vowels-tg-f0.png&quot;</span>, wav, <span class="at">end =</span> <span class="dv">3</span>, <span class="at">tg =</span> <span class="cn">NULL</span>, <span class="at">f0 =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">praat_plot</span>(<span class="st">&quot;vowels-tg-f0.png&quot;</span>, wav, <span class="at">end =</span> <span class="dv">3</span>, <span class="at">tg =</span> <span class="cn">NULL</span>, <span class="at">f0 =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 </div>
 <div id="further-customisation" class="section level2">
 <h2>Further customisation</h2>
