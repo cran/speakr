@@ -1,3 +1,11 @@
+# speakr v3.2.4
+
+- Fixed Authors.
+
+# speakr v3.2.3
+
+- Fixed language field in DESCRIPTION.
+
 # speakr v3.2.2
 
 ## Added

@@ -6,8 +6,6 @@
 \alias{speakr-package}
 \title{speakr: A Wrapper for the Phonetic Software 'Praat'}
 \description{
-\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
-
 It allows running 'Praat' scripts from R and it provides some wrappers for basic plotting. It also adds support for literate markdown tangling. The package is designed to bring reproducible phonetic research into R.
 }
 \seealso{
@@ -19,7 +17,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Stefano Coretta \email{stefano.coretta@gmail.com} (\href{https://orcid.org/0000-0001-9627-5532}{ORCID}) (stefanocoretta)
+\strong{Maintainer}: Stefano Coretta \email{stefano.coretta@gmail.com} (\href{https://orcid.org/0000-0001-9627-5532}{ORCID})
 
 }
 \keyword{internal}

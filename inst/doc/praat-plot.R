@@ -7,17 +7,17 @@ knitr::opts_chunk$set(
 library(speakr)
 
 ## ----speakr, eval=FALSE-------------------------------------------------------
-#  library(speakr)
+# library(speakr)
 
 ## ----basic--------------------------------------------------------------------
-#  # The sound file.
-#  wav <- system.file("extdata", "vowels.wav", package = "speakr")
-#  
-#  praat_plot("vowels.png", wav, end = 3, tg = FALSE)
+# # The sound file.
+# wav <- system.file("extdata", "vowels.wav", package = "speakr")
+# 
+# praat_plot("vowels.png", wav, end = 3, tg = FALSE)
 
 ## ----tg-----------------------------------------------------------------------
-#  praat_plot("vowels-tg.png", wav, end = 3, tg = NULL)
+# praat_plot("vowels-tg.png", wav, end = 3, tg = NULL)
 
 ## ----tg-f0--------------------------------------------------------------------
-#  praat_plot("vowels-tg-f0.png", wav, end = 3, tg = NULL, f0 = TRUE)
+# praat_plot("vowels-tg-f0.png", wav, end = 3, tg = NULL, f0 = TRUE)
 
